@@ -25,6 +25,8 @@ pip install -r requirements.txt
 ### Set up the Database
 
 With Postgres running, create a `trivia` database:
+(Create user from pg Admin.Con PowerShell navega hasta el directorio \backend)
+```Get-Content trivia.psql | psql trivia```
 
 ```bash
 createdb trivia
@@ -35,6 +37,9 @@ Populate the database using the `trivia.psql` file provided. From the `backend` 
 ```bash
 psql trivia < trivia.psql
 ```
+
+
+Get-Content trivia.psql | psql trivia
 
 ### Run the Server
 
